@@ -1,0 +1,22 @@
+#!/bin/sh
+
+#SBATCH --ntasks=1
+#SBATCH --array=4,9-11,13%3
+#SBATCH --mem=300GB
+#SBATCH --time=16:00:00
+#SBATCH --job-name="EAGLE-kinematic-profiles"
+
+#SBATCH -C largemem
+
+#SBATCH --output="/home/mwilkins/logs/%x-%A-%a.out"
+#SBATCH --error="/home/mwilkins/logs/%x-%A-%a-error.out"
+
+module load gcc/6.4.0
+module load openmpi/3.0.0
+module load python/3.6.4
+module load numpy/1.16.3-python-3.6.4
+module load h5py/2.7.1-python-3.6.4
+module load scipy/1.3.0-python-3.6.4
+module load matplotlib/2.2.2-python-3.6.4
+
+python -u /home/mwilkins/EAGLE/scripts/make_morphology_hdf.py $SLURM_ARRAY_TASK_ID
