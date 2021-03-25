@@ -1,0 +1,12 @@
+File location:
+/fred/oz009/mwilkinson/EAGLE/processed_data/
+File name:
+snap_redshfit_galaxy_kinematic_profile.hdf5
+e.g. 028_z000p000_galaxy_kinematic_profile.hdf5
+File description:
+Star kinematic profiles. 
+Profiles for number of star particles, mass of stars, mean(v_R), mean(v_phi), std(v_R), std(v_phi), std(v_z), kappa_co, kappa_rot, z_half, and jz/jc(E) 
+for both linear and log bins and stellar <R_1/2, <2R_1/2, <R_1/4, <R_3/4.
+Also has triaxial a,b,c and all galaxy ids.
+Link to code:
+https://gitlab.com/Matt_W/my-eagle-scripts/-/blob/master/make_morphology_hdf.py
