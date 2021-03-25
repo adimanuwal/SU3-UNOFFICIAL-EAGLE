@@ -1,3 +1,4 @@
+#Reading SUBFIND outputs of EAGLE data and saving into separate arrays for different halo/subhalo properties
 import h5py                  as h5
 import os
 from   numpy                 import *
