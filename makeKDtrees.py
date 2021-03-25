@@ -1,4 +1,4 @@
-#Make and store KDTrees for positions of DM, stars, gas and subhalos in EAGLE units
+#Make and store KDTrees for positions of DM, stars, gas and subhalos in EAGLE units (to convert into proper units multiple by a/h, where a is the scale factor and h is the Hubble parameter)
 from   numpy                 import *
 import h5py                  as h5
 import time
