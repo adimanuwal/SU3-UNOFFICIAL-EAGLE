@@ -1,3 +1,4 @@
+#Reading the EAGLE star particle data in SUBFIND outputs and saving the properties in separate arrays
 import h5py  as h5
 import os
 from   numpy import *
